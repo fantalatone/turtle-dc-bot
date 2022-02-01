@@ -1,0 +1,18 @@
+const canvas = Canvas.createCanvas(800, 300);
+const ctx = canvas.getContext("2d");
+
+const background = await Canvas.loadImage("./assets/story/background.jpg");
+ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+
+// BORDER
+ctx.lineWidth = 5;
+ctx.strokeStyle = "#000";
+ctx.strokeRect(0, 0, canvas.width, canvas.height);
+
+// TEXT
+ctx.font = "30px sans-serif";
+ctx.fillStyle = "#0f0f0f";
+ctx.fillText(args[0], 50, 100);
+
+const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "story.jpg");
+message.channel.send(attachment);
