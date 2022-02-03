@@ -1,0 +1,48 @@
+let embed = new Discord.MessageEmbed()
+    .setColor("#e42643")
+    .setTitle("Rengini Seç Kanka!")
+
+let messageEmbed = await message.channel.send({embeds: [embed]});
+
+messageEmbed.react(redEmoji);
+messageEmbed.react(blueEmoji);
+
+client.on("messageReactionAdd", async (reaction, user) => {
+    if (reaction.message.partial) await reaction.message.fetch();
+    if (reaction.partial) await reaction.fetch();
+    if (user.bot) return;
+    if (!reaction.message.guild) return;
+
+    if (reaction.message.channel.id === channelId) {
+        switch (reaction.emoji.name) {
+            case blueEmoji:
+                await reaction.message.guild.members.cache.get(user.id).roles.add(blueRole);
+                break;
+            case redEmoji:
+                await reaction.message.guild.members.cache.get(user.id).roles.add(redRole);
+                break;
+            default:
+                break;
+        }
+    } else return;
+})
+
+client.on("messageReactionRemove", async (reaction, user) => {
+    if (reaction.message.partial) await reaction.message.fetch();
+    if (reaction.partial) await reaction.fetch();
+    if (user.bot) return;
+    if (!reaction.message.guild) return;
+
+    if (reaction.message.channel.id === channelId) {
+        switch (reaction.emoji.name) {
+            case blueEmoji:
+                await reaction.message.guild.members.cache.get(user.id).roles.remove(blueRole);
+                break;
+            case redEmoji:
+                await reaction.message.guild.members.cache.get(user.id).roles.remove(redRole);
+                break;
+            default:
+                break;
+        }
+    } else return;
+})

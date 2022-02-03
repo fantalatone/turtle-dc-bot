@@ -1,0 +1,47 @@
+// registerFont("./fonts/NexaBook.otf", { family: 'Nexa-Book' });
+        // registerFont("./fonts/NexaBold.otf", { family: 'Nexa-Bold' });
+        // const canvas = createCanvas(1500, 1500);
+        // const ctx = canvas.getContext("2d");
+
+        // const background = await loadImage("./portfolio0.png");
+        // ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+
+        // // // BORDER
+        // // ctx.lineWidth = 5;
+        // // ctx.strokeStyle = "#000";
+        // // ctx.strokeRect(0, 0, canvas.width, canvas.height);
+
+        // // Name
+        // ctx.font = "40px Nexa-Bold";
+        // ctx.fillStyle = "#0f0f0f";
+        // ctx.fillText("Kullanıcı Adı :", 45, 80);
+
+        // ctx.font = "40px Nexa-Book";
+        // ctx.fillStyle = "#0f0f0f";
+        // ctx.fillText(args[0], 305, 80);
+
+        // // Role
+        // ctx.font = "40px Nexa-Bold";
+        // ctx.fillStyle = "#0f0f0f";
+        // ctx.fillText("Rol :", 45, 140);
+
+        // ctx.font = "40px Nexa-Book";
+        // ctx.fillStyle = "#0f0f0f";
+        // ctx.fillText(args[1], 135, 140);
+
+        // // Age
+        // ctx.font = "40px Nexa-Bold";
+        // ctx.fillStyle = "#0f0f0f";
+        // ctx.fillText("Yaş :", 45, 200);
+
+        // ctx.font = "40px Nexa-Book";
+        // ctx.fillStyle = "#0f0f0f";
+        // ctx.fillText(args[2], 145, 200);
+
+        // // Portfolio
+        // ctx.font = "40px Nexa-Bold";
+        // ctx.fillStyle = "#0f0f0f";
+        // ctx.fillText("Portfolyo Resimler", 45, 260);
+
+        // const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "story.jpg");
+        // message.channel.send({files: [attachment]});
