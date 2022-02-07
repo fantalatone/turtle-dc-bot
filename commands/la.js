@@ -1,5 +1,6 @@
 module.exports = {
     name: "la",
+    command_version: "1",
     description: "La",
     async execute(client, message, args) {
         if (args.length <= 0) return message.reply("Lö!");

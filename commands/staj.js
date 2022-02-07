@@ -2,6 +2,7 @@ const template = require("../utils/stajTemplate");
 
 module.exports = {
     name: "staj",
+    command_version: "1",
     description: "Staj",
     async execute(client, message, args, Discord) {
 

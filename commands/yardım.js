@@ -2,6 +2,7 @@ const { MessageButton, MessageActionRow, MessageEmbed } = require("discord.js");
 
 module.exports = {
     name: "yardım",
+    command_version: "1",
     description: "Yardım Al",
     async execute(client, message, args) {
 

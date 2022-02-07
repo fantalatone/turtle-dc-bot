@@ -8,6 +8,7 @@ const { Canvas, createCanvas, Image, loadImage } = require("canvas");
 
 module.exports = {
     name: "test",
+    command_version: "-1",
     description: "test",
     async execute(client, message, args, Discord) {
 

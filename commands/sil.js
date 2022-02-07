@@ -2,6 +2,7 @@ const { MessageButton, MessageActionRow } = require("discord.js");
 
 module.exports = {
     name: "sil",
+    command_version: "1",
     description: "Kanaldaki mesajları sil.",
     async execute(client, message, args) {
 

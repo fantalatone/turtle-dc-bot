@@ -1,5 +1,6 @@
 module.exports = {
     name: "renksec",
+    command_version: "1",
     desc: "Renk Seç Komutu",
     async execute(client, message, args, Discord) {
 
