@@ -1,14 +1,14 @@
 {
   "name": "turtle",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.2.0",
+  "description": "{Turtle} is a bot for Turtle In The Circle Discord.",
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
     "dev": "nodemon main.js"
   },
   "author": "FantaLaTone",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "canvas": "^2.9.0",
     "combine-image": "^1.0.3",

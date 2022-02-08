@@ -1,0 +1,10 @@
+{
+    "change_version": "1.2.0",
+    "change_title": "Bot Yeni Özellikler!",
+    "changes": [
+        "bota yeni özellikler eklendi",
+        "komutlar düzenlendi",
+        "komutlara versiyonlar girildi",
+        "güncelleme duyuruları sistemi eklendi"
+    ]
+}

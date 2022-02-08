@@ -14,7 +14,7 @@ module.exports = {
         const timeout = args[2];
 
         const embed = new Discord.MessageEmbed()
-            .setColor('#2ECC71')
+            .setColor("#2ECC71")
             .setAuthor({ name: message.author.username, iconURL: `https://cdn.discordapp.com/avatars/${message.author.id}/${message.author.avatar}.png?size=256` })
             .setTitle(title)
             .setDescription(desc)
