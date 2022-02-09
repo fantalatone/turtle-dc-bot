@@ -18,18 +18,11 @@ client.on("messageCreate", message => {
     const command = args.shift().toLowerCase();
 
     if (!client.commands.has(command)) return;
-    if (client.commands.get(command).private) return;
     
     client.commands.get(command).execute(client, message, args, Discord);
 });
 
 client.once("ready", () => {
-
-    function checkUpdates() {
-        client.commands.get("changelog").execute(client, Discord, process.env.CHANGELOG_CHANNEL_ID);
-    }
-    checkUpdates();
-
     console.log("Turtle is now working slowly but surely!");
 });
 
