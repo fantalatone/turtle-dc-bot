@@ -1,0 +1,12 @@
+{
+    "change_version": "1.4.0",
+    "change_title": "Bota Oyun Ekleniyor! (Henüz Bitmedi!)",
+    "changes": [
+        "t! prefixi",
+        "yeni event sistemi",
+        "yeni oyun komutu t!start",
+        "dosyalar düzenlendi",
+        "daha temiz kod",
+        "bot kapatma eventi"
+    ]
+}

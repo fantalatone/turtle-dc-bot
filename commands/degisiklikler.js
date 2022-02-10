@@ -1,4 +1,4 @@
-const changelog = require("../changelog.json");
+const changelog = require("../assets/changelog.json");
 
 module.exports = {
     name: "degisiklikler",
