@@ -21,9 +21,9 @@ fs.writeFileSync(changelog_path + "changelog-latest.json", JSON.stringify({
     "change_version": version,
     "change_title": title,
     "changes": args
-}));
+}, null, 4));
 
 const package_data = JSON.parse(fs.readFileSync("./package.json"));
 package_data.version = version
 
-fs.writeFileSync("./package.json", JSON.stringify(package_data)) 
+fs.writeFileSync("./package.json", JSON.stringify(package_data, null, 4)) 

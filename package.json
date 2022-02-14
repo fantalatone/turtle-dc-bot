@@ -1,6 +1,6 @@
 {
     "name": "turtle",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "description": "{Turtle} is a bot for Turtle In The Circle Discord.",
     "main": "main.js",
     "scripts": {

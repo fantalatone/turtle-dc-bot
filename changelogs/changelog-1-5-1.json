@@ -1,0 +1,18 @@
+{
+    "change_version": "1.5.1",
+    "change_title": "Bot Büyük Güncelleme",
+    "changes": [
+        "!cal komutu (under-development)",
+        "t!prefixi",
+        "yeni event sistemi",
+        "yeni oyun sistemi (under-development)",
+        "oyun komutu t!start",
+        "dosyalar düzenlendi",
+        "daha temiz kod",
+        "bot quit eventi",
+        "yeni changelog sistemi",
+        "yeni changelog.js komutu",
+        "!degisiklikler komutu argüman eklendi !degisiklikler <sürüm>",
+        "replit için özel scriptler"
+    ]
+}
