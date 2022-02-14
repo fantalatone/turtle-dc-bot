@@ -1,11 +1,14 @@
 {
     "name": "turtle",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "description": "{Turtle} is a bot for Turtle In The Circle Discord.",
     "main": "main.js",
     "scripts": {
         "start": "node main.js",
-        "dev": "nodemon main.js"
+        "dev": "nodemon main.js",
+        "replit-node-update": "npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH",
+        "replit-node-clean": "rm -rf node_modules && rm package-lock.json && npm cache clear --force && npm cache clean --force && npm i",
+        "replit-setup": "npm run replit-node-update && npm run replit-node-clean"
     },
     "author": "FantaLaTone",
     "license": "MIT",
