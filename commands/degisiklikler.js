@@ -24,10 +24,9 @@ module.exports = {
 
             return message.channel.send({ embeds: [embedList] });
 
-        } else {
-            if (args[0] === "latest") changelog = require("../changelogs/changelog-latest.json");
-            else changelog = require(`../changelogs/changelog-${args[0]}.json`);
         }
+        
+        changelog = require(`../changelogs/changelog-${args[0]}.json`);
 
         const embed = new Discord.MessageEmbed()
             .setColor("#2ECC71")
