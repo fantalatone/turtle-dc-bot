@@ -1,19 +1,19 @@
 {
-  "name": "turtle",
-  "version": "1.4.0",
-  "description": "{Turtle} is a bot for Turtle In The Circle Discord.",
-  "main": "main.js",
-  "scripts": {
-    "start": "node main.js",
-    "dev": "nodemon main.js"
-  },
-  "author": "FantaLaTone",
-  "license": "MIT",
-  "dependencies": {
-    "canvas": "^2.9.0",
-    "combine-image": "^1.0.3",
-    "discord.js": "^13.6.0",
-    "dotenv": "^15.0.0",
-    "node-fetch": "^2.6.1"
-  }
+    "name": "turtle",
+    "version": "1.5.0",
+    "description": "{Turtle} is a bot for Turtle In The Circle Discord.",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js",
+        "dev": "nodemon main.js"
+    },
+    "author": "FantaLaTone",
+    "license": "MIT",
+    "dependencies": {
+        "canvas": "^2.9.0",
+        "combine-image": "^1.0.3",
+        "discord.js": "^13.6.0",
+        "dotenv": "^15.0.0",
+        "node-fetch": "^2.6.1"
+    }
 }
