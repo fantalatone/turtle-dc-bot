@@ -1,7 +1,14 @@
 require("dotenv").config();
 
 const Discord = require("discord.js");
-const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES, Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS], disableMentions: false });
+const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES, Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Discord.Intents.FLAGS.GUILD_VOICE_STATES], disableMentions: false });
+
+const { Player } = require("discord-player");
+const registerPlayerEvents = require("./utils/registerPlayerEvents");
+
+client.player = new Player(client);
+
+registerPlayerEvents(client.player);
 
 const registerCommands = require("./utils/registerCommands");
 const registerEvents = require("./utils/registerEvents");
@@ -16,17 +23,7 @@ registerGameCommands(client.gameCommands);
 registerEvents(client, Discord);
 
 client.once("ready", () => {
-    console.log("Turtle is now working slowly but surely!");
+    console.log("{Turtle} is running slowly but surely!");
 });
 
 client.login(process.env.TOKEN);
-
-process.once('uncaughtException', async () => {
-    await console.log("TODO! Add Bot Close Event");
-  
-    process.exit(0)
-})
-
-process.on("SIGINT", () => {
-    throw new Error()
-})

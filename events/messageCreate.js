@@ -1,10 +1,24 @@
-const prefixes = [process.env.GAME_PREFIX, process.env.PREFIX];
+const prefixes = [process.env.GAME_PREFIX, process.env.MUSIC_PREFIX, process.env.PREFIX];
 
 module.exports = (client, Discord) => {
     client.on("messageCreate", message => {
 
         const prefix = prefixes.find(v => message.content.includes(v));
-        const commandList = prefix === prefixes[0] ? client.gameCommands : client.commands;
+        let commandList = null
+
+        switch (prefix) {
+            case prefixes[0]:
+                commandList = client.gameCommands;
+                break;
+            case prefixes[1]:
+                commandList = client.musicCommands;
+                break;
+            case prefixes[2]:
+                commandList = client.commands;
+                break;
+            default:
+                break;
+        }
 
         if (message.author.bot) return;
 
