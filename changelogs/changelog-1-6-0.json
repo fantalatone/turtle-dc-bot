@@ -1,0 +1,9 @@
+{
+    "change_version": "1.6.0",
+    "change_title": "Müzik Çalabiliyorum Artık",
+    "changes": [
+        "yeni !cal, !atla, !devam, !dur, !durdur, !list, !döngü komutları",
+        "şarkı çalabiliyorum artık",
+        "birkaç küçük düzenleme"
+    ]
+}

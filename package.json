@@ -1,6 +1,6 @@
 {
     "name": "turtle",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "author": "FantaLaTone",
     "description": "{Turtle} is a bot for Turtle In The Circle Discord.",
     "main": "main.js",
@@ -13,13 +13,17 @@
     },
     "license": "MIT",
     "dependencies": {
+        "@discordjs/builders": "^0.12.0",
         "@discordjs/opus": "^0.7.0",
+        "@discordjs/rest": "^0.3.0",
         "canvas": "^2.9.0",
         "combine-image": "^1.0.3",
+        "discord-api-types": "^0.27.2",
         "discord-player": "^5.2.2",
         "discord.js": "^13.6.0",
         "dotenv": "^15.0.0",
         "ffmpeg-static": "^4.4.1",
+        "googleapis": "^95.0.0",
         "node-fetch": "^2.6.1"
     }
 }

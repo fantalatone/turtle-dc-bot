@@ -22,7 +22,7 @@ module.exports = {
 
         await message.channel.send({ content: "@everyone", embeds: [embed] }).then(async msg => {
             const filter = (reaction, user) => (reaction.emoji.name === '👍' || reaction.emoji.name === '👎') && user.id !== client.user.id;
-            const collector = await msg.createReactionCollector({ filter, time: timeout * 1000, dispose: true });
+            const collector = await msg?.createReactionCollector({ filter, time: timeout * 1000, dispose: true });
         
             let yesCount = 0;
             let noCount = 0;
@@ -46,7 +46,7 @@ module.exports = {
             });
 
             await collector.on('end', collected => {
-                msg.delete();
+                msg?.delete();
                 if (yesCount + noCount <= 0) {
                     message.channel.send("Kimse Oy Kullanmadı!");
                     return;
@@ -60,8 +60,8 @@ module.exports = {
                 }
             });
 
-            await msg.react("👍");
-            await msg.react("👎");
+            await msg?.react("👍");
+            await msg?.react("👎");
         });
     }
 }

@@ -8,7 +8,7 @@ module.exports = {
 
         const player = client.player;
 
-        const query = args[0];
+        const query = args.join(" ");
         const searchResult = await player
             .search(query, {
                 requestedBy: message.user,

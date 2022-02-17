@@ -22,7 +22,7 @@ registerGameCommands(client.gameCommands);
 
 registerEvents(client, Discord);
 
-client.once("ready", () => {
+client.once("ready", async () => {
     console.log("{Turtle} is running slowly but surely!");
 });
 

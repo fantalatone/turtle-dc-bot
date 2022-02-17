@@ -1,9 +1,14 @@
 {
-    "change_version": "1.6.0",
-    "change_title": "Müzik Çalabiliyorum Artık",
+    "change_version": "1.7.0",
+    "change_title": "İçerik Güncellemesi ve Bug Fix",
     "changes": [
-        "yeni !cal, !atla, !devam, !dur, !durdur, !list, !döngü komutları",
-        "şarkı çalabiliyorum artık",
-        "birkaç küçük düzenleme"
+        "!la komutunda çok büyük update",
+        "google spreadsheet desteği",
+        "!oy bug fix",
+        "!cal invalid fix",
+        "messageEvent bug fix",
+        "README.md eklendi github sayfasına",
+        "https://github.com/fantalatone/turtle-dc-bot",
+        "gereksiz fontlar sistemden silindi"
     ]
 }
